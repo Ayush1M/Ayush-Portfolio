@@ -9,11 +9,6 @@
     box-sizing: border-box;
 }
 
-
-/* #2e2e2e
-#da7427
-white */
-
 :root{
     --ff-primary: ;
     --ff-secondary: ;
@@ -44,9 +39,6 @@ white */
 
 /* General styles */
 
-header{
-    display: none;
-}
 section{
     padding: 3.85em 2em;
 }
@@ -81,6 +73,66 @@ h3{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* header */
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .875em 0;
+    background-color: var(--clr-dark);
+}
+
+.logo{
+    width: 90px;
+}
+
+.close-nav{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    border: 0;
+    background: 0;
+    color: var(--clr-accent);
+    font-weight: 800;
+    font-size: 1.8em;
+    cursor: pointer;
+    padding: .2em .4em;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    position: fixed;
+    z-index: 10;
+    font-size: var(--fs-h3);
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    padding-top: 2.5em;
+    padding-left: 2.5em;
+}
+
+.nav-item{
+    list-style-type: none;
+    margin: 1em 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+}
+
+.nav-link:hover{
+    color: var(--clr-accent);
+}
+
+
 
 /* intro */
 
@@ -88,6 +140,10 @@ h3{
     box-shadow: var(--bs);
     width: 250px;
     margin: 0 auto;
+}
+
+.coloured-text{
+    color: var(--clr-accent);
 }
 
 .section-title{
@@ -271,6 +327,7 @@ h3{
 .project-three-content,
 .project-four-content{
     order: -1;
+    box-shadow: .75em .85em 1.25em rgba(0, 0, 0, .45);
 }
 
 .project-desc{
@@ -317,6 +374,7 @@ h3{
     align-items: center;
     margin-top: 1.85em;
     margin-bottom: 2em;
+    text-transform: uppercase;
 }
 
 .live-link{
@@ -336,7 +394,7 @@ h3{
 
 .live-link:hover,
 .github-link:hover{
-    background-color: #E99841;
+    opacity: .85;
     color: #fff;
 }
 
@@ -371,8 +429,80 @@ h3{
     margin: .35em 0;
 }
 
+.contact-email{
+    color: rgb(185, 185, 185);
+}
+
+.contact-email:hover{
+    color: var(--clr-accent);
+}
+
+.social-list{
+    display: flex;
+    justify-content: center;
+}
+
+.social-item{
+    list-style-type: none;
+    margin-top: .85em;
+    font-size: 1.2em;
+}
+
+.social-link{
+    margin: 0 .5em;
+    color: var(--clr-accent);
+}
+
+.social-link:hover{
+    opacity: .75;
+}
+
 
 @media(min-width: 740px){
+
+    /* header */
+
+    .header-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .875em 0;
+        background-color: var(--clr-dark);
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        position: relative;
+        font-size: 1.075em;
+        padding-top: 0;
+        padding-left: 0;
+        left: 0;
+    }
+
+    .close-nav{
+        display: none;
+    }
+    
+    .nav-item{
+        margin-right: 1.25em;
+        font-size: 1.275em;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    
+    .nav-link{
+        text-decoration: none;
+        color: rgb(228, 228, 228);
+    }
+    
+    .nav-link:hover{
+        color: var(--clr-accent);
+    }
 
     /* intro */
 
@@ -644,23 +774,6 @@ h3{
         margin-bottom: 0;
     }
 
-    .live-link,
-    .github-link{
-        padding: .6em .85em;
-        text-decoration: none;
-        background-color: #FC8E3A;
-        color: #2E2E2E;
-        letter-spacing: 2px;
-        border-radius: 8px;
-        font-size: 1.125em;
-    }
-
-    .live-link:hover,
-    .github-link:hover{
-        background-color: #E99841;
-        color: #fff;
-    }
-
     .link-one,
     .link-two,
     .link-three,
@@ -670,22 +783,65 @@ h3{
 
     /* footer */
 
-.contact{
-    padding-top: 1.5em;
-    padding-bottom: 8em;
-    text-align: center;
-    font-size: 1.45em;
-    letter-spacing: 2px;
-    background-color: #1f1f1f;
-    color: #fff;
-}
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.5em;
+        padding-bottom: 2.85em;
+        text-align: center;
+        font-size: 1.45em;
+        letter-spacing: 2px;
+        background-color: #1f1f1f;
+        color: #fff;
+    }
 
-.contact-title{
-    margin: .35em 0;
-}
+    .contact-title{
+        margin: .35em 0;
+    }
 }
 
 @media(min-width: 920px){
+
+    /* header */
+ 
+    .header-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .875em 0;
+        background-color: var(--clr-dark);
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        position: relative;
+        font-size: 1.175em;
+    }
+    
+    .nav-item{
+        margin: 0 1.5em;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    
+    .nav-link{
+        text-decoration: none;
+        color: rgb(228, 228, 228);
+    }
+    
+    .nav-link:hover{
+        color: var(--clr-accent);
+    }
+
+
+    /* work */
 
     .work-title{
         margin-bottom: 2.75em;
@@ -722,7 +878,7 @@ h3{
     .project-four-content{
         box-shadow: .75em .85em 1.25em rgba(0, 0, 0, .45);
         margin-inline: 2em;
-        padding-inline: 1.5em;
+        padding-inline: 2.25em;
     }
     
     .project-image{
@@ -804,24 +960,7 @@ h3{
         margin-right: 1.5em;
         margin-bottom: 0;
     }
-    
-    .live-link,
-    .github-link{
-        padding: .6em .85em;
-        text-decoration: none;
-        background-color: #FC8E3A;
-        color: #2E2E2E;
-        letter-spacing: 2px;
-        border-radius: 8px;
-        font-size: 1.125em;
-    }
-    
-    .live-link:hover,
-    .github-link:hover{
-        background-color: #E99841;
-        color: #fff;
-    }
-    
+        
     .link-one,
     .link-two,
     .link-three,
