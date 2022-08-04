@@ -8,26 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Ayush Mahajan</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
   </head>
   <body>
     <header class="header-container">
-      <nav class="nav-container">
-        <img src="images/logo.png" alt="" class="logo" />
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#home">Home</a></li>
-          <li class="nav-item"><a href="#services">My Services</a></li>
-          <li class="nav-item"><a href="#skills">Skills</a></li>
-          <li class="nav-item"><a href="">My work</a></li>
-          <li class="nav-item"><a href="">Contact</a></li>
-        </ul>
-      </nav>
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <nav class="nav-container">
+          <!-- <button aria-label="close navigation" class="close-nav">&times;</button> -->
+          <ul class="nav-list">
+            <button aria-label="close navigation" class="close-nav">&times;</button>
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">My Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#my-work">My work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+       </nav>
     </header>
 
     <section class="intro" id="home">
-          <h2 class="section-heading section__title">Hi, I am <span class="main-text">Ayush Mahajan</span></h2>
+          <h2 class="section-heading section__title">Hi, I am <span class="main-text"> <span class="coloured-text">A</span>yush <span class="coloured-text">M</span>ahajan</span></h2>
           <p class="section-title section__subtitle">FrontEnd Developer</p>
           <img src="images/my-image.jpg" alt="my image" class="intro-image">
     </section>
@@ -64,7 +67,7 @@
       </div>
     </section>
 
-    <section class="my-work" id="work">
+    <section class="my-work" id="my-work">
       <h2 class="work-title section__title">My work</h2>
       <div class="work-container">
 
@@ -72,7 +75,7 @@
           <img src="images/projects/project-image-1.png" alt="" class="project-image project-image-one">
           <div class="project-one-content">
             <h2 class="project-heading project-heading-one">Travel Guide</h2>
-            <p class="project-desc project-desc-one"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab dolorum, explicabo neque laboriosam repellat necessitatibus ratione, reprehenderit iusto assumenda pariatur, vel maxime ea iure et ducimus voluptates distinctio accusamus eaque autem nobis. Debitis blanditiis, cumque consequatur accusamus voluptate eligendi maiores laborum quae totam beatae non corrupti, repellendus quaerat. Adipisci atque ad iure sint cupiditate, optio saepe unde mollitia quis molestiae quasi provident, neque itaque. Pariatur unde illo consequatur veritatis aperiam exercitationem, explicabo perspiciatis dolorum enim quidem officia atque corporis quis iste illum itaque ad possimus, dolore earum omnis. Quisquam veniam aut autem sunt. Corporis, aspernatur inventore. Aliquid animi fugit eius. </p>
+            <p class="project-desc project-desc-one"> A Travel Guide made with React using Props to Keep the record of favorite places you travelled.   </p>
             <p class="tech-stack project-desc-three">Made with: <span class="stack-bold"> React.js </span></p>
             <div class="links link-one">
               <a href="" class="live-link">Live</a>
@@ -84,7 +87,23 @@
         <div class="project-two project">
           <div class="project-two-content">
             <h2 class="project-heading project-heading-two"> RP battle game(Wizard vs Demons)</h2>
-            <p class="project-desc project-desc-two"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium at dolor aspernatur alias quo sit? Libero, mollitia perspiciatis pariatur reiciendis rem dolores quia possimus aperiam itaque illum deserunt nam, quas explicabo quo aut qui asperiores impedit obcaecati atque distinctio! Molestias, minus enim. Placeat cum delectus aperiam, vero cupiditate laboriosam officiis. Eveniet a recusandae laborum ratione molestias ex quis in assumenda, ut aspernatur, sapiente dignissimos? Accusantium, dolores autem excepturi natus obcaecati ducimus fugiat, maiores delectus dignissimos eligendi dolorem quidem, enim quis? Sequi blanditiis impedit cumque enim eius. Necessitatibus iure, tempore sint, veniam totam quasi magni ratione non quos ducimus provident! </p>
+            <p class="project-desc project-desc-two"> This is fun RP battle game made with using HTML ,CSS      and ES6 concepts of Javascript.
+              <ul class="project-desc project-desc-two">
+                <li>
+                  This game is a 1v1 battle game in which wizard has to battle three demons.
+                </li>
+                <li>
+                  The battle takes place such when Attack button is pressed each character rolls a dice and numbers are displayed on squared boxes and the sum of the total will be deducted from the opponent health which is shown with a health bar.
+                </li>
+                <li>
+                  At each level if wizard survives a new opponent shows up and the game continues for three rounds.
+                </li>
+                <li>
+                  You can learn more about the project in the readme section of this project. 
+                </li>
+                So Choose your side and let's battle.
+              </ul>
+            </p>
             <p class="tech-stack project-desc-three">Made with: <span class="stack-bold">HTML, CSS, JavaScript(ES6).</span></p>
             <div class="links link-two">
               <a href="" class="live-link">Live</a>
@@ -110,7 +129,7 @@
         <div class="project-four project">
           <div class="project-four-content">
             <h2 class="project-heading project-heading-four">Space Travel Website</h2>
-            <p class="project-desc project-desc-four"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nam. Libero, ipsum! Laborum animi natus eaque quidem minima consequatur laudantium aliquam corrupti, magni illum iste mollitia aspernatur debitis voluptate vitae, dolores ea reprehenderit fuga eveniet magnam vel neque, quisquam expedita! Atque quibusdam soluta praesentium voluptas error tempore maxime quas commodi, assumenda minus distinctio aut asperiores nesciunt nihil doloribus nulla reprehenderit quo corrupti, accusantium dolor adipisci sit minima quam? Nulla, molestias provident. Voluptas, temporibus ad debitis nulla earum dicta molestiae laudantium. Tempora vel adipisci, quidem nihil delectus voluptatum sunt quas et dignissimos ipsa alias labore rerum expedita quos odio repellendus aliquam.</p>
+            <p class="project-desc project-desc-four"> Want to travel to Space? This Journey will fulfil all your space wishes. This is a space travel website which consists of different pages each consisting different information regarding destination, crew and Technology. I used Javascript to connect each tabs inside each page and created a whole design system for styling purpose using CSS. So what you waiting for, buckle up and behold for a truly great experience.</p>
             <p class="tech-stack project-desc-three">Made with: <span class="stack-bold">HTML, CSS, JavaScript.</span></p>
             <div class="links link-four">
               <a href="" class="live-link">Live</a>
@@ -134,8 +153,8 @@
       <h3 class="contact-title">Let's Connect</h3>
       <a href="" rel="noopener noreferrer" class="contact-email">email</a>
       <div class="social-list">
-        <li class="social-item"><a class="social-link" href="" rel="noopener noreferrer"></a></li>
-        <li class="social-item"><a class="social-link" href="" rel="noopener noreferrer"></a></li>
+        <li class="social-item"><a class="social-link" href="" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li class="social-item"><a class="social-link" href="" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
       </div>
     </footer>
   </body>
