@@ -466,7 +466,6 @@ header{
 
 .contact{
     padding-top: 1.5em;
-    padding-bottom: 8em;
     text-align: center;
     font-size: 1.125em;
     letter-spacing: 2px;
@@ -474,16 +473,23 @@ header{
     color: #fff;
 }
 
+.copyright{
+    margin-left: auto;
+    padding-top: 4.25em;
+    margin: .5em;
+}
+
+.copyright-bold{
+    color: var(--clr-accent);
+}
+
 .contact-title{
     margin: .35em 0;
 }
 
 .contact-email{
-    color: rgb(185, 185, 185);
-}
-
-.contact-email:hover{
     color: var(--clr-accent);
+    text-decoration: underline;
 }
 
 .social-list{
@@ -845,7 +851,7 @@ header{
         align-items: center;
         justify-content: center;
         padding-top: 1.5em;
-        padding-bottom: 2.85em;
+        /* padding-bottom: 2.85em; */
         text-align: center;
         font-size: 1.45em;
         letter-spacing: 2px;
@@ -855,6 +861,12 @@ header{
 
     .contact-title{
         margin: .35em 0;
+    }
+
+    .copyright{
+        font-size: .6em;
+        margin-left: auto;
+        padding-top: 8em;
     }
 }
 
