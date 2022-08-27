@@ -55,7 +55,7 @@ body{
     }
 }
 
-/* General styles */
+/*============ General styles ===========*/
 
 section{
     padding: 3.85em 2em;
@@ -71,7 +71,7 @@ img{
     letter-spacing: 2px;
 }
 
-/* Typography */
+/*========== Typography ===========*/
 
 h1,
 h2,
@@ -91,7 +91,7 @@ h3{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* header */
+/*========= header ==========*/
 
 header{
     background-color: var(--clr-dark);
@@ -140,7 +140,6 @@ header{
     transition: transform 250ms ease-in-out;
 }
 
-
 .navigation-open{
     transform: translateX(0);
 }
@@ -172,7 +171,7 @@ header{
 }
 
 
-/* intro */
+/*=========== intro ==========*/
 
 .intro-image{
     box-shadow: var(--bs);
@@ -192,7 +191,7 @@ header{
 }
 
 
-/* Services */
+/*========= Services ==========*/
 
 .my-services{
     background-color: var(--clr-dark);
@@ -259,7 +258,7 @@ header{
     color: #fff;
 }
 
-/* skills */
+/*========== skills ===========*/
 
 .skills-title{
     text-align: center;
@@ -298,7 +297,7 @@ header{
 }
 
 
-/* work */
+/*========== work ===========*/
 
 .work-title{
     margin-bottom: 2.75em;
@@ -462,7 +461,7 @@ header{
     color: #FC8E3A;
 }
 
-/* footer */
+/*=========== footer ==========*/
 
 .contact{
     padding-top: 1.5em;
@@ -492,6 +491,10 @@ header{
     text-decoration: underline;
 }
 
+.contact-email:hover{
+    opacity: .85;
+}
+
 .social-list{
     display: flex;
     justify-content: center;
@@ -515,7 +518,7 @@ header{
 
 @media(min-width: 740px){
 
-    /* header */
+    /*=========== header ============*/
 
     .logo{
         width: 90px;
@@ -566,7 +569,7 @@ header{
         color: var(--clr-accent);
     }
 
-    /* intro */
+    /*========== intro =========*/
 
     .intro{
         display: grid;
@@ -610,16 +613,7 @@ header{
         text-transform: uppercase;
     }
 
-    /* services */
-
-    .my-services{
-        background-color: var(--clr-dark);
-        background-image: url(images/bg-image.jpg);
-        background-size: cover;
-        background-blend-mode: multiply ;
-        color: #fff;
-        text-align: center;
-    }
+    /*========= services ==========*/
 
     .services-title::before{
         content: '';
@@ -670,7 +664,7 @@ header{
         font-family: 'Source Sans Pro', sans-serif;
     }
 
-    /* skills */
+    /*========= skills ==========*/
 
     .skills-title::before{
         content: '';
@@ -697,7 +691,7 @@ header{
         opacity: .75;
     }
 
-    /* work */
+    /*======= work ========*/
 
     .work-title::before{
         content: '';
@@ -843,7 +837,7 @@ header{
         text-align: center;
     }
 
-    /* footer */
+    /*======== footer ========*/
 
     .contact{
         display: flex;
@@ -851,7 +845,6 @@ header{
         align-items: center;
         justify-content: center;
         padding-top: 1.5em;
-        /* padding-bottom: 2.85em; */
         text-align: center;
         font-size: 1.45em;
         letter-spacing: 2px;
@@ -872,7 +865,7 @@ header{
 
 @media(min-width: 920px){
 
-    /* header */
+    /*======= header ========*/
 
     .nav-list{
         font-size: 1.175em;
@@ -884,7 +877,6 @@ header{
         text-transform: uppercase;
     }
     
-    
     .nav-link{
         text-decoration: none;
         color: rgb(228, 228, 228);
@@ -895,7 +887,7 @@ header{
     }
 
 
-    /* work */
+    /*========= work ==========*/
 
     .work-title{
         margin-bottom: 2.75em;
@@ -950,7 +942,6 @@ header{
         order: 1;
     }
 
-    
     .project-heading{
         font-size: var(--fs-h3);
         color: #FC8E3A;
