@@ -343,7 +343,8 @@ header{
 .project-image-one,
 .project-image-two,
 .project-image-three,
-.project-image-four{
+.project-image-four,
+.project-image-five{
     order: 0;
 }
 
@@ -355,7 +356,8 @@ header{
 .project-heading-one,
 .project-heading-two,
 .project-heading-three,
-.project-heading-four{
+.project-heading-four,
+.project-heading-five{
     text-align: center;
     margin-bottom: .5em;
     margin-top: .75em;
@@ -364,7 +366,8 @@ header{
 .project-one-content,
 .project-two-content,
 .project-three-content,
-.project-four-content{
+.project-four-content,
+.project-five-content{
     order: -1;
     box-shadow: .75em .85em 1.25em rgba(0, 0, 0, .45);
     margin-bottom: 1.8em;
@@ -380,7 +383,8 @@ header{
 .project-desc-one,
 .project-desc-two,
 .project-desc-three,
-.project-desc-four{
+.project-desc-four,
+.project-desc-five{
     line-height: 1.6;
     font-size: 1.275em;
     text-align: center;
@@ -449,7 +453,8 @@ header{
 .link-one,
 .link-two,
 .link-three,
-.link-four{
+.link-four,
+.link-five{
     text-align: center;
 }
 
@@ -743,7 +748,8 @@ header{
     .project-heading-one,
     .project-heading-two,
     .project-heading-three,
-    .project-heading-four{
+    .project-heading-four,
+    .project-heading-five{
         text-align: center;
         margin-bottom: .5em;
         margin-top: .75em;
@@ -756,7 +762,8 @@ header{
     .project-desc-one,
     .project-desc-two,
     .project-desc-three,
-    .project-desc-four{
+    .project-desc-four,
+    .project-desc-five{
         line-height: 1.6;
         font-size: 1.275em;
         text-align: left;
@@ -833,7 +840,8 @@ header{
     .link-one,
     .link-two,
     .link-three,
-    .link-four{
+    .link-four,
+    .link-five{
         text-align: center;
     }
 
@@ -921,7 +929,8 @@ header{
     .project-one-content,
     .project-two-content,
     .project-three-content,
-    .project-four-content{
+    .project-four-content,
+    .project-five-content{
         box-shadow: .75em .85em 1.25em rgba(0, 0, 0, .45);
         margin-inline: 2em;
         padding-inline: 2.25em;
@@ -950,7 +959,8 @@ header{
     .project-heading-one,
     .project-heading-two,
     .project-heading-three,
-    .project-heading-four{
+    .project-heading-four,
+    .project-heading-five{
         text-align: center;
         margin-bottom: .5em;
         margin-top: .75em;
@@ -963,7 +973,8 @@ header{
     .project-desc-one,
     .project-desc-two,
     .project-desc-three,
-    .project-desc-four{
+    .project-desc-four,
+    .project-desc-five{
         line-height: 1.6;
         font-size: 1.275em;
         text-align: left;
@@ -1010,7 +1021,8 @@ header{
     .link-one,
     .link-two,
     .link-three,
-    .link-four{
+    .link-four,
+    .link-five{
         text-align: center;
     }
     
