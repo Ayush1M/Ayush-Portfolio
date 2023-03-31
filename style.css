@@ -157,6 +157,10 @@ header{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+#hire-me{
+    color: var(--clr-accent);
+}
+
 .nav-link{
     text-decoration: none;
     color: var(--clr-light);
