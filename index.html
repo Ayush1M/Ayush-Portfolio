@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <!-- font awesome icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Ayush Mahajan</title>
-
+    <!-- favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
   </head>
   <body>
@@ -36,19 +38,26 @@
     </section>
 
     <section class="my-services" id="services">
-        <h2 class="services-title section__title">What I Do?</h2>
+        <h2 class="services-title section__title">Why hire me?</h2>
         <div class="service-container">
           <div class="service-one">
-            <h3 class="service-heading">Frontend Development</h3>
-            <p class="service-desc">My main goal is to produce responsive websites and web Apps that provide users the best and most appropriate experience suited to their device or browser. Currently I have knowledge and can work with HTML, CSS, JavaScript, React and Tailwind CSS.</p>
+            <h3 class="service-heading">Efficiency</h3>
+            <img src="images/icons/efficiency.png" alt="Efficiency" class="hire-me">
+            <p class="service-desc">I believe having a proper planning and a end goal helps in achieving task more efficiently and takes less amout of time.</p>
           </div>
           <div class="service-two">
-            <h3 class="service-heading">Web and UI design</h3>
-            <p class="service-desc">I believe its important to understand both development and design to build seamless user experience. My main focus is designing web pages and apps which are minimalistic with which the user can interact easily and follow all design principles.</p>
+            <h3 class="service-heading">Goal Orientation</h3>
+            <img src="images/icons/goals.png" alt="goal Orientation" class="hire-me">
+            <p class="service-desc">I always try to break bigger goals into smaller tasks which makes it easy to achieve them.</p>
+          </div>
+          <div class="service-three">
+            <h3 class="service-heading">Flexibilty</h3>
+            <img src="images/icons/flexibility.png" alt="flexibility" class="hire-me">
+            <p class="service-desc">I believe its important to be flexible in working in any environment wheather its in a team or independent. As much as i enjoy working in a team, I am open and able to work indpendently on tasks given to me.</p>
           </div>
         </div>
 
-        <a href="#my-work" class="btn">My work</a>
+        <a href="#my-work" class="btn slide-link">My work</a>
     </section>
 
     <section class="skills" id="skills">
@@ -81,8 +90,8 @@
             </p>
             <p class="tech-stack project-desc-three">Made with: <span class="stack-bold"> React.js </span></p>
             <div class="links link-one">
-              <a href="https://tenzies-game-ayush.netlify.app" class="live-link" target="_blank" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/Ayush1M/Tenzies-Game" class="github-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://tenzies-game-ayush.netlify.app" class="live-link slide-link" target="_blank" rel="noopener noreferrer">Live</a>
+              <a href="https://github.com/Ayush1M/Tenzies-Game" class="github-link slide-link" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </div>
@@ -90,40 +99,45 @@
         <div class="project-two project">
           <img src="images/projects/project-image-2.png" alt="" class="project-image project-image-one">
           <div class="project-two-content">
-            <h2 class="project-heading project-heading-one">Travel Guide</h2>
-            <p class="project-desc project-desc-one"> A Travel Guide made with React using Props to Keep the record of favorite places you travelled.</p>
+            <h2 class="project-heading project-heading-one">Speed Typing Game</h2>
+            <p class="project-desc project-desc-one"> A fun application to test how fast you can type in the given amount time. Its made with React hooks(useState, useEffect, useContext, useRef and custom hooks) and also consist of theme switcher.</p>
             <p class="tech-stack project-desc-three">Made with: <span class="stack-bold"> React.js </span></p>
             <div class="links link-one">
-              <a href="https://ayush1m.github.io/Travel-Guide" class="live-link" target="_blank" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/Ayush1M/Travel-Guide" class="github-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://speed-typing-game-by-ayush.netlify.app/" class="live-link slide-link" target="_blank" rel="noopener noreferrer">Live</a>
+              <a href="https://github.com/Ayush1M/speed-typing-game-using-react-hooks" class="github-link slide-link" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </div>
 
         <div class="project-three project">
           <div class="project-three-content">
-            <h2 class="project-heading project-heading-two"> RP battle game(Wizard vs Demons)</h2>
-            <p class="project-desc project-desc-two"> This is fun RP battle game made with using HTML ,CSS      and ES6 concepts of Javascript.
+            <h2 class="project-heading project-heading-two"> Twimba</h2>
+            <p class="project-desc project-desc-two"> Twimba is an application which works on the principle of Twitter and lets you share your thoughts.
               <ul class="project-desc project-desc-two">
                 <li>
-                  This game is a 1v1 battle game in which wizard has to battle three demons.
+                  Like or unlike a tweet.
                 </li>
                 <li>
-                  The battle takes place such when Attack button is pressed each character rolls a dice and numbers are displayed in square boxes and total score will be deducted from the opponent health which is shown with a health bar.
+                  Retweet a tweet.
                 </li>
                 <li>
-                  At each level if wizard survives a new opponent shows up till the time any of the opponent is defeated. There are total 3 rounds. 
+                  Reply to a particular tweet.
                 </li>
                 <li>
-                  You can learn more about the project in the readme section of this project. 
+                  Write your own tweet. 
                 </li>
-                So Choose your side and let's battle.
+                <li>
+                  Delete a tweet. 
+                </li>
+                <li>
+                  Delete a reply to a tweet. 
+                </li>
               </ul>
             </p>
-            <p class="tech-stack project-desc-three">Made with: <span class="stack-bold">HTML, CSS, JavaScript(ES6).</span></p>
+            <p class="tech-stack project-desc-three">Made with: <span class="stack-bold">HTML, CSS, JavaScript.</span></p>
             <div class="links link-two">
-              <a href="https://ayush1m.github.io/Roleplay-battle-game" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/Ayush1M/Roleplay-battle-game" target="_blank" class="github-link" rel="noopener noreferrer">GitHub</a>
+              <a href="https://twimba-app-ayush.netlify.app/" target="_blank" class="live-link slide-link" rel="noopener noreferrer">Live</a>
+              <a href="https://github.com/Ayush1M/Twimba" target="_blank" class="github-link slide-link" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
           <img src="images/projects/project-image-3.png" alt="" class="project-image project-image-two">
@@ -136,8 +150,8 @@
             <p class="project-desc project-desc-three"> A Chrome extension serving as a Momentum dashboard. The background is randomized each time the user opens a new Chrome tab, fetching high-resolution images from the Unsplash API. It displays the local time depending on where the user is located. Furthermore it displays the user's favorite crypto asset and tracks its value in real-time, displaying the highest and lowest values of the last 24 hours. Finally the dashboard displays current weather conditions by fetching data from the OpenWeather API. I have also added greeting message displayed in 24 hour format.</p>
             <p class="tech-stack project-desc-three">Made with: <span class="stack-bold">HTML, CSS, JavaScript and APIs</span></p>
             <div class="links link-three">
-              <a href="https://ayush1m.github.io/Momentum-Dashboard-for-Chrome" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/Ayush1M/Momentum-Dashboard-for-Chrome" target="_blank" class="github-link" rel="noopener noreferrer">GitHub</a>
+              <a href="https://ayush1m.github.io/Momentum-Dashboard-for-Chrome" target="_blank" class="live-link slide-link" rel="noopener noreferrer">Live</a>
+              <a href="https://github.com/Ayush1M/Momentum-Dashboard-for-Chrome" target="_blank" class="github-link slide-link" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </div>
@@ -155,8 +169,8 @@
             </p>
             <p class="tech-stack project-desc-three">Made with: <span class="stack-bold">HTML, CSS, JavaScript.</span></p>
             <div class="links link-five">
-              <a href="https://ayush1m.github.io/E-commerce-Product-Page" target="_blank" class="live-link" rel="noopener noreferrer">Live</a>
-              <a href="https://github.com/Ayush1M/E-commerce-Product-Page" target="_blank" class="github-link" rel="noopener noreferrer">GitHub</a>
+              <a href="https://ayush1m.github.io/E-commerce-Product-Page" target="_blank" class="live-link slide-link" rel="noopener noreferrer">Live</a>
+              <a href="https://github.com/Ayush1M/E-commerce-Product-Page" target="_blank" class="github-link slide-link" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
           <img src="images/projects/project-image-5.png" alt="" class="project-image project-image-five">
@@ -180,7 +194,7 @@
         <li class="social-item"><a class="social-link" target="_blank" href="https://github.com/Ayush1M" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
       </div>
       
-      <p class="copyright">copyright &#169; <span class="copyright-bold">Ayush Mahajan</span> 2022</p>
+      <p class="copyright">&#169; <span class="copyright-bold">Ayush Mahajan😎</span></p>
     </footer>
     <script src="script.js"></script>
   </body>
