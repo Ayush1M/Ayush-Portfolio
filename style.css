@@ -28,9 +28,6 @@ body{
 
 
 :root{
-    --ff-primary: ;
-    --ff-secondary: ;
-
     --ff-reg: 300;
     --ff-bold: 900;
 
@@ -195,15 +192,15 @@ header{
 
 .my-services{
     background-color: var(--clr-dark);
-    background-image: url(images/bg-image.jpg);
-    background-size: cover;
-    background-blend-mode: multiply ;
     color: #fff;
     text-align: center;
 }
 
 .service-container{
-    padding: 0 .25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .services-title{
@@ -222,22 +219,33 @@ header{
     opacity: .45;
 }
 
-.service-heading{
-    font-size: var(--fs-h3);
-    letter-spacing: 2px;
-    margin-bottom: .75em;
+.hire-me{
+    margin: 0 auto;
+    width: 30%;
 }
 
+.service-heading{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: .75em;
+    color: var(--clr-accent);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.service-two .service-heading,
+.service-three .service-heading,
+.service-one .service-desc,
+.service-two .service-desc,
+.service-three .service-desc{
+    margin-top: 1em;
+}
+
+
 .service-desc{
-    width: 80%;
     margin: 0 auto;
     line-height: 1.6;
     letter-spacing: 1.5px;
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-.service-two{
-    margin-top: 2.5em;
 }
 
 .btn{
@@ -251,11 +259,12 @@ header{
     font-size: 1.5em;
     letter-spacing: 1px;
     border-radius: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.btn:hover{
-    background-color: #E99841;
-    color: #fff;
+.btn:hover,
+.btn:focus{
+    color: var(--clr-light);
 }
 
 /*========== skills ===========*/
@@ -361,6 +370,8 @@ header{
     text-align: center;
     margin-bottom: .5em;
     margin-top: .75em;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
 }
 
 .project-one-content,
@@ -404,15 +415,18 @@ header{
 
 .work-link{
     text-decoration: none;
-    color: #FC8E3A;
+    color: var(--clr-accent);
     border-bottom: 1px solid #FC8E3A;
     font-size: 1.25em;
     text-transform: uppercase;
     letter-spacing: 1.75px;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: 300ms ease-in-out;
 }
 
-.work-link:hover{
-    color: #fff;
+.work-link:hover,
+.work-link:focus{
+    color: var(--clr-light);
 }
 
 .arrow-image{
@@ -429,6 +443,33 @@ header{
     text-transform: uppercase;
 }
 
+.slide-link::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--clr-dark);
+    z-index: -1;
+    border-radius: 8px;
+    border: 1px solid var(--clr-accent);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease-in-out;
+}
+
+.slide-link:hover::before,
+.slide-link:focus::before{
+    transform: scaleX(1);
+}
+
+.slide-link{
+    position: relative;
+    z-index: 1;
+}
+
 .live-link{
     margin-bottom: 1em;
 }
@@ -442,10 +483,13 @@ header{
     letter-spacing: 2px;
     border-radius: 8px;
     font-size: 1.125em;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .live-link:hover,
-.github-link:hover{
+.github-link:hover,
+.live-link:focus,
+.github-link:focus{
     opacity: .85;
     color: #fff;
 }
@@ -460,10 +504,12 @@ header{
 
 .tech-stack{
     margin: .75em 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .stack-bold{
     color: #FC8E3A;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*=========== footer ==========*/
@@ -475,6 +521,7 @@ header{
     letter-spacing: 2px;
     background-color: #1f1f1f;
     color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .copyright{
@@ -496,8 +543,9 @@ header{
     text-decoration: underline;
 }
 
-.contact-email:hover{
-    opacity: .85;
+.contact-email:hover,
+.contact-email:focus{
+    opacity: .8;
 }
 
 .social-list{
@@ -516,8 +564,10 @@ header{
     color: var(--clr-accent);
 }
 
-.social-link:hover{
+.social-link:hover,
+.social-link:focus{
     opacity: .75;
+    color: var(--clr-light);
 }
 
 
@@ -570,7 +620,8 @@ header{
         color: rgb(228, 228, 228);
     }
     
-    .nav-link:hover{
+    .nav-link:hover,
+    .nav-link:focus{
         color: var(--clr-accent);
     }
 
@@ -620,6 +671,7 @@ header{
 
     /*========= services ==========*/
 
+
     .services-title::before{
         content: '';
         display: block;
@@ -647,11 +699,13 @@ header{
 
     .service-heading{
         font-size: 2.5rem;
-        margin-bottom: .75em;
+        margin-bottom: .5em;
     }
-    
-    .service-container{
-        display: flex;
+
+    .service-one,
+    .service-two,
+    .service-three{
+        width: 80%;
     }
 
     .service-two{
@@ -659,10 +713,9 @@ header{
     }
     
     .service-desc{
-        width: 80%;
+        width: 100%;
         min-width: 300px;
         margin: 0 auto;
-        padding-inline: 2em;
         line-height: 1.8;
         letter-spacing: 1px;
         font-size: 1.25rem;
@@ -816,7 +869,7 @@ header{
     }
 
     .work-link:hover{
-        color: #fff;
+        color: var(--clr-light);
     }
 
     .arrow-image{
@@ -857,7 +910,7 @@ header{
         font-size: 1.45em;
         letter-spacing: 2px;
         background-color: #1f1f1f;
-        color: #fff;
+        color: var(--clr-light);
     }
 
     .contact-title{
@@ -892,6 +945,26 @@ header{
     
     .nav-link:hover{
         color: var(--clr-accent);
+    }
+
+    /*========= services ========*/
+
+    .service-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2em;
+    }
+
+    .service-one,
+    .service-two,
+    .service-three{
+        width: 30%;
+    }
+
+    .service-two .service-heading,
+    .service-three .service-heading{
+        margin-top: 0;
     }
 
 
